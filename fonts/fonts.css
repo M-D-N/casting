@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Jost Bold";
+    src: url(./Jost/Jost-Bold.ttf);
+}
+@font-face {
+    font-family: "Jost Regular";
+    src: url(./Jost/Jost-Regular.ttf);
+}
+@font-face {
+    font-family: "Jost Light";
+    src: url(./Jost/Jost-Light.ttf);
+}
+@font-face {
+    font-family: "Jost Thin";
+    src: url(./Jost/Jost-Thin.ttf);
+}

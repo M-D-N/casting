@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casting | Main</title>
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/bootstrapmin.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="header" id="up">
+        <div class="container pad-0">
+            <nav class="header__nav navbar navbar-expand-lg">
+                <div class="container-fluid d-flex align-items-center">
+                    <img class="logo" src="./img/logo.png" alt="">
+                    <div class="dropdown">
+                        <button class="lang btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                          UZ
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li class="dropdown-li" ><button class="dropdown-item" type="button"><a href="./indexRu.html">РУ</a></button></li>
+                          <li class="dropdown-li"><button class="dropdown-item" type="button"><a href="./indexUz.html">UZ</a></button></li>
+                        </ul>
+                      </div>
+                  <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="burger-menu fas fa-bars"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 800px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#who">Kimlar uchun</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Kurs haqida</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!"><img src="./img/logo.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bio">O'zim haqimda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cont">Murojat uchun</a>
+                        </li>
+                    </ul>
+                  </div>                  
+                </div>
+              </nav>
+              <div class="header__content d-flex flex-column align-items-center justify-content-center">
+                  <div class="header__content-box">
+                      <div class="header__content-item">
+                          <img src="./img/headerimg.png" alt="img" class="header-img">
+                          <img src="./img/gradient.png" alt="img" class="header-gr">
+                      </div>
+                      <div class="header__content-bottom d-flex flex-column align-items-center justify-content-between">
+                        <h2 class="header__content-bottom-desc">VIDEO KURS</h2>
+                        <h1 class="header__content-title">Investitsiyalarsiz <span>casting</span></h1>
+                           
+                        <p class="header__content-txt">Qanday qilib o'z qolingiz bilan <span>modellik portfoliosini yaratish</span> va <span>kastingga</span> tayyorlanish ?</p>
+                        <p style="color: #000; border-color: #000; margin: 25px 0;" class="sale__lessons d-flex align-items-center"><span class="fab fa-youtube sale-span"></span> 15 darsliklar</p>
+                        <div class="video-box">
+                            <video poster="./img/poster.png" class="content-video" id="Video1" >
+                                <source class="video-h" src="./video/1 урок.mp4" type="video/mp4" /> 
+                            </video>                            
+                            <div id="buttonbar">
+                                <button class="videoplay" id="play" onclick="vidplay()"><span class="fas fa-play-circle player"></span></button>
+                            </div>
+                        </div>                         
+                        <a style="margin: 0; padding: 20px 100px;" target="_blank" href="https://T.me/saazproduction" class="header__content-btn">Ro'yxatdan o'tish</a>
+                        <div style="margin: 35px 15px;" class="sale-gift d-flex justify-content-between align-items-center">
+                            <img class="sale-gift-img" src="./img/gift.png" alt="img">
+                            <div class="sale-gift-item">
+                                <p class="sale-gift-item-txt"><span>K</span>ursdan oldin va keyin individual fotosuratlarni</p>
+                                <p class="sale-gift-item-txt"><span>K</span>o'rib chiqish va <span>M</span>aslahatlar sovg'a sifatida!</p>
+                                <p class="sale-gift-item-time">Faqat 20-fevralgacha</p>
+                                <img style="top: 50px;" class="sale-gift-item-img" src="./img/gift2.png" alt="img">
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </header>
+    <main class="main">
+            <div id="who" class="section for-who">
+                <div class="container">
+                    
+                    <h1 class="section__title">BU KURS <span class="s-black">KIMLAR UCHUN?</span></h1>
+                    <div class="for-who-item">
+                        <p class="for-who-txt"><span>Model</span> bo'lishni rejalashtiryapsizmi?</p>
+                        <img class="for-who-img" src="./img/emodzi1.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Fotosuratchiga pul <span>sarflashni xohlamaymaysizmi</span></p>
+                        <img style="top: 90px;" class="for-who-img left" src="./img/emodzi2.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt"><span>Kastingdan</span> o'tishni bilmaysizmi</p>
+                        <img class="for-who-img" src="./img/emodzi3.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt"><span>O'zingizni</span> agentliklar bilan ishlashga tayyorlashni xohlaysizmi</p>
+                        <img class="for-who-img left top-e" src="./img/emodzi4.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Telefonda o'zingizni suratga olishni <span>o'rganmoqchimisiz</span></p>
+                        <img class="for-who-img" src="./img/emodzi5.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Kamera qarshisida <span>o‘ziga ishongan</span> bo‘lishni xohlaysizmi</p>
+                        <img class="for-who-img left" src="./img/emodzi6.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">O'zingizni <span>topmoqchimisiz</span></p>
+                        <img class="for-who-img" src="./img/emodzi7.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="section about">
+                <div class="container d-flex flex-column align-items-center">
+                    <h1 class="about__title"><span>KURS</span> HAQIDA</h1>
+                    <p class="about__txt">Anchadan beri <span>model</span> bo'lishni orzu qilgansizmi? Lekin sizda yaxshi <span>suratlar va portfoliongiz</span> yo'qmi?</p>
+                    <p class="about__txt"> Biz sizga bu muammoni <span>hal qilishda</span> yordam beramiz! Birinchi qadamlardagi barcha muammolar va qiyinchiliklari , <span>modellashtirish sanoatini</span> ko'rsatadigan noyob <span>intensiv yaratdik</span> , telefondan qanday foydalanib o'z qo'lingiz bilan <span>portfolio yasashni ko'rsatdik</span>.</p>
+                    <div class="video-box">
+                            <video poster="./img/poster.png" class="content-video" id="Video2" >
+                                <source class="video-h" src="./video/1 урок.mp4" type="video/mp4" /> 
+                            </video>                            
+                            <div id="buttonbar2">
+                                <button class="videoplay" id="play2" onclick="vidplay2()"><span class="fas fa-play-circle player"></span></button>
+                            </div>
+                        </div>
+                    <p class="about__txt">Kursda biz sizga <span>model portfoliosini</span> yaratishning barcha qirralari haqida gapirib beramiz, kurs davomida sizga  fotosuratlaringiz va ma'lumotlaringiz bo'yicha <span>individual fikr-mulohaza</span> beramiz. <span>Said Fazilov</span> bilan birga modellar <span>Alina va Farrux</span> qanday suratga olish va kompozitsiyani yig'ishni ko'rsatib berishadi. <span>Sizning Modellik</span> agenstvolariga tayyorgarlik jarayoningiznii imkon qadar <span>oson qilish</span> uchun qo'limizdan kelganini qilamiz va Toshkent shahridagi model agentliklari va maktablarining toʻliq roʻyxatini beramiz. Siz afsuslanmaysiz!Barcha o'quv bloklari malumotlarini quyida topishingiz mumkin. 
+                    </p>
+                </div>
+            </div>
+            <div class="section blocks">
+                <div class="container d-flex flex-column align-items-center">
+                    <div class="block d-flex flex-column align-items-center justify-content-between">
+                        <h3 class="block__title"><span>Blok 01</span></h3>
+                        <p class="block__txt"><span>O'z qo'llaringiz bilan modellik portfoliosi va kastingga qanday tayyorgarlik ko'rish kerak?</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Tanishuv </li>
+                            <li class="block__ul-li">-	Kasting nima?  </li>
+                            <li class="block__ul-li">-	Ilova turlari</li>
+                            <li class="block__ul-li">-	O'zingizni qanday baholash va nimaga intilish kerak?</li>
+                            <li class="block__ul-li">-	Qaysi kartalar va portfoliolarga e'tibor berish kerak?</li>
+                            <li class="block__ul-li">-	ilhomni qayerdan izlash kerak?</li>
+                            <li class="block__ul-li">-	Portfolio / Snapshotlar / Selfies</li>
+                            <li class="block__ul-li">-	Rasmlaringizni ko'rib chiqamiz</li>
+                        </ul>
+                        <p class="block__bottom">(5 ta dars + bonus)</p>
+                        <img class="block__img top1" src="./img/block1.png" alt="">
+                        <img class="block__img bottom1" src="./img/block2.png" alt="">
+                    </div>
+                    <div class="block d-flex flex-column align-items-start justify-content-between">
+                        <h3 class="block__title"><span>Blok 02</span></h3>
+                        <p style="font-size: 16px;" class="block__txt"><span>Suratga olish uchun tayyorgarlik</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	O'z portfoliongizni yaratish uchun nima kerak?</li>
+                            <li class="block__ul-li">-	"Vouu" effekti bo'lishi uchun telefonda qanday suratga olish kerak? </li>
+                            <li class="block__ul-li">-	yorug'lik va kompozitsiyaning xususiyatlari </li>
+                            <li class="block__ul-li">-	suratga olish maydoni va fon tanlash </li>
+                        </ul>
+                        <img class="block__img top2" src="./img/block3.png" alt="">
+                        <img class="block__img bottom2" src="./img/block4.png" alt="">
+                    </div>
+                    <div class="block d-flex flex-column align-items-start justify-content-between">
+                        <h3 class="block__title"><span>Blok 03</span></h3>
+                        <p class="block__txt"><span>Praktikum  - Modellar bilan suratga olish. Qanday qilib o'z qo'liz bilan snapshot olish?</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Suratga olish: telefonda suratga olish va pozalar</li>
+                            <li class="block__ul-li">-	Yaxshi fotosuratlar uchun burchaklar va rejalar </li>
+                            <li class="block__ul-li">-	Video profil - video vizitkani qanday suratga olish va tayyorlash</li>
+                            <li class="block__ul-li">-	Biz portfolio uchun suratga tushamiz (3 ta rasm)</li>
+                            <li class="block__ul-li">-	Turli fotosuratlar uchun fon va kayfiyatni o'zgartiring </li>
+                        </ul>
+                        <p style="margin-top: 20px;" class="block__txt"><span>QIZLAR</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Makiyaj va soch turmagi xususiyatlari</li>
+                            <li class="block__ul-li">-	Snapshot uchun kiyim xususiyatlari</li>
+                            <li class="block__ul-li">-	Qizlar portfoliosini suratga olish</li>
+                            <li class="block__ul-li">-	ayol obrazi va uslubini yaratish</li>
+                        </ul>
+                        <p style="margin-top: 20px;" class="block__txt"><span>YIGITLAR</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Snapshot kiyim xususiyatlari</li>
+                            <li class="block__ul-li">-  Fitnes polaroidlarini otish</li>
+                            <li class="block__ul-li">-	Erkak portfoliosini suratga olish</li>
+                            <li class="block__ul-li">-	Erkak obrazi va uslubini yaratish</li>
+                        </ul>
+                        <img class="block__img top3" src="./img/block5.png" alt="">
+                        <img class="block__img midle3" src="./img/block6.png" alt="">
+                        <img class="block__img bottom3" src="./img/block7.png" alt="">
+                    </div>
+                    <div class="block d-flex flex-column align-items-start justify-content-between">
+                        <h3 class="block__title"><span>Blok 04</span></h3>
+                        <p class="block__txt"><span>Portfolio o'z qolingiz bilan</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Fotosuratlarni qanday tanlash kerak </li>
+                            <li class="block__ul-li">-	Telefon va kameradagi rasmlarni solishtiring </li>
+                            <li class="block__ul-li">-	Fayllarni bitta kartaga tahrirlash va yig'ish </li>
+                            <li class="block__ul-li">-	Video profilini tahrirlash </li>
+                            <li class="block__ul-li">-	Portfolio uchun filtrlar </li>
+                            <li class="block__ul-li">-	Kompozitni birlashtirish </li>
+                            <li class="block__ul-li">-	Rasmlaringizni yakuniy ko'rib chiqish </li>
+                        </ul>
+                        <img class="block__img top4" src="./img/block8.png" alt="">
+                    </div>
+                    <div class="sale d-flex flex-column align-items-center justify-content-between">
+                        <p class="sale__lessons d-flex align-items-center"><span class="fab fa-youtube sale-span"></span> 15 darsliklar</p>
+                        <p class="sale__count">Скидка <span>57%</span></p>
+                        <p class="sale__count-txt"><span class="number-line">350.000</span>200.000so'm</p>
+                        <div class="sale-gift d-flex justify-content-between align-items-center">
+                            <img class="sale-gift-img" src="./img/gift.png" alt="img">
+                            <div class="sale-gift-item">
+                                <p class="sale-gift-item-txt"><span>K</span>ursdan oldin va keyin individual fotosuratlarni</p>
+                                <p class="sale-gift-item-txt"><span>K</span>o'rib chiqish va <span>M</span>aslahatlar sovg'a sifatida!</p>
+                                <p class="sale-gift-item-time">Faqat 20-fevralgacha</p>
+                                <img style="top: 50px;" class="sale-gift-item-img" src="./img/gift2.png" alt="img">
+                            </div>
+                        </div>
+                        <a style="padding: 20px 40px; margin-top: 40px; margin-bottom: 0;" class="header__content-btn" target="_blank" href="https://T.me/saazproduction">KURSGA RO'YXAT OLING</a>
+                        <img class="sale-emodzi sale-top1" src="./img/emodzi8.png" alt="">
+                        <img class="sale-emodzi sale-top2" src="./img/emodzi9.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="bio" class="section bio">
+                <div class="container d-flex flex-column justify-content-center align-items-center pad-0">
+                    <h1 class="bio__title">MURABBIY VA <span>MENTOR</span></h1>
+                    <div class="bio__box d-flex align-items-center justify-content-center">
+                        <img class="bio__box-img" src="./img/said.png" alt="">
+                        <div class="bio__box-item">
+                            <h3 class="bio__box-item-title"><span>Said Fazilov</span></h3>
+                            <p class="bio__box-item-txt">Sanoatda 10 yillik tajribaga ega ijodkor, fotograf va kasting direktori moda va ommaviy axborot vositalarida oz faoliyatini olib boradi .</p>
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2" src="./img/logo2.png" alt="img">
+                                <p class="bio__slide-txt"><a href="http://cafb.asia/ru/article/822/ "><span>Saidazim Fazilov</span> O'zbekistondagi ijodkorlarning yangi avlodning yorqin namoyandasi <span>Fotosuratchi</span>, <span>blogger</span>, Toshkentda o'z studiyasining asoschisi, <span>LALI o'zbek brendining</span> brend menejeri Toshkentdagi Singapore menejmentni rivojlantirish instituti <span>moda</span> fakulteti o'qituvchisi Br necha yildan beri u O'zbekistondagi eng yirik <span>Podium Italia</span>  retelling kompaniyasining <span>art-direktori</span> lavozimiga tayinlandi.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/afisha.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://www.afisha.uz/gorod/2019/06/20/saidazim-fazyilov/ ">Сегодня он отвечает за <span>оформление витрин</span> и <span>рекламу самых рупных мультибрендовых магазинов страны</span>, ведет и продвигает <span>узбекские бренды</span>, а год назад стал <span>первым лектором</span> международного факультета в сфере моды в <span>Узбекистане</span></a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/repost.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://repost.uz/life/saidazim "><span>креативный директор</span> Podium Italia Саидазим Фазылов о <span>фешн-индустрии</span> в нашей стране Саидазим рассказал о развитии моды в стране, недопониманиях с людьми и сложностях работы в <span>Podium Italia</span>.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/mag.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://themag.uz/post/saidazim-fazylov-o-modnoj-industrii-posle-covid-19 "><span>Саидазим Фазылов — о модной индустрии после COVID-19</span> Мода стала одной из индустрий, которая понесла сильные убытки из-за пандемии COVID-19. О потерях и том, как будет восстанавливаться fashion-мир, рассказал ташкентский креативщик, креативный директор компании Podium Italia и лектор факультета моды Сингапурского института в Ташкенте Саидазим Фазылов.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/tbld.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://tbld.uz/said-live/ ">Что происходит с мужской <span>модой в мире</span> и почему на неё влияет TikTok. Когда в Узбекистане несколько мужчин собираются вместе, это не всегда повод, чтобы поесть плов в чайхане. Подобные стереотипы разрушает узбекский <span>креативщик</span> и <span>фотограф</span> <span>Саидазим Фазылов</span>. В своём новом подкасте он собрал экспертов фэшн индустрии, чтобы обсудить мужскую неделю моды.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/bc.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://kazakhstan.britishcouncil.org/ru/creative-central-asia/%D1%83%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD?page=2  ">Обладатель исключительного сертификата Conde Nast College London в категории Excellence in Fashion Media (2017). В 2016 году получил степень бакалавра University of Wales. Затем в 2017 году окончил магистратуру по Бизнес Администрированию в Сингапурском Университете Развития Менеджмента в Ташкенте. С 2008 года Саидазим сотрудничал с самыми различными рекламными агенствами и компаниями Узбекистана, включая агентство Brandbox Creative, фотоагентство Panorama Media, Unicef Uzbekistan и Фонд Культуры и Искусства Узбекистана.</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button class="bio__slide-btn active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer id="cont" class="footer">
+        <div class="container d-flex flex-column align-items-center justify-content-between">
+            <h2 class="footer__title"><span>Sinov darsi</span></h2>
+            <p class="footer__txt">Bepul sinov darsiga hoziroq ro‘yxatdan o‘ting</p>
+            <a target="_blank" href="https://T.me/saazproduction" class="footer__btn">Ro'yxatdan o'tish</a>
+            <h2 class="footer__title-2"><span>Savol bering</span> va biz javob beramiz</h2>
+            <a style="padding: 20px 150px;" class="footer__btn" target="_blank" href="https://T.me/saazproduction">So'rang</a>
+            <div class="footer__box d-flex">
+                <a target="_blank" href="https://youtube.com/c/SaidFazilov"><span class="footer__span fab fa-youtube"></span></a>
+                <a target="_blank" href="https://T.me/saazproduction"><span class="footer__span fab fa-telegram"></span></a>
+                <a target="_blank" href="https://instagram.com/castings.uz?utm_medium=copy_link"><span class="footer__span fab fa-instagram"></span></a>        
+            </div>
+            <img src="./img/logo.png" alt="">
+            <p class="footer__copyright">SAAZ PRODUCTION x IVCS STUDIO 2022</p>
+            <a class="up" href="#up"><span class="f-up fal fa-long-arrow-up"></span></a>
+        </div>
+    </footer>
+
+
+    <script src="./app/propper.js"></script>
+    <script type="text/javascript">
+
+        function vidplay() {
+           var video = document.getElementById("Video1");
+           var button = document.getElementById("play");
+           if (video.paused) {
+              video.play();
+              button.textContent = "";
+           } else {
+              video.pause();
+              button.textContent = "";
+           }
+        }
+        function vidplay2() {
+           var video = document.getElementById("Video2");
+           var button = document.getElementById("play2");
+           if (video.paused) {
+              video.play();
+              button.textContent = "";
+           } else {
+              video.pause();
+              button.textContent = "";
+           }
+        }
+             
+    </script>
+
+
+    
+</body>
+</html>
