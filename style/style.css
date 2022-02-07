@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
 @import url(../fonts/fonts.css);
 
 :root{
@@ -19,7 +26,8 @@
 body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 a{
     text-decoration: none;
@@ -48,9 +56,15 @@ p{
 }
 .navbar-nav{
     width: 100%;
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
 }
 .nav-link,
 .lang{
@@ -75,9 +89,13 @@ p{
 .dropdown-item,
 .dropdown,
 .dropdown-li{
+    width: -webkit-max-content !important;
+    width: -moz-max-content !important;
     width: max-content !important;
 }
 .dropdown-menu{
+    min-width: -webkit-max-content !important;
+    min-width: -moz-max-content !important;
     min-width: max-content !important;
 }
 .header__content-item{
@@ -90,18 +108,22 @@ p{
     left: 0;
     width: 100% !important;
     display: none;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     overflow: hidden !important;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 .header-img{
     overflow: hidden !important;
     width: 100% !important;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     left: 0;
     z-index: 1;
     position: absolute;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     display: none;
 }
 .burger-menu{
@@ -165,13 +187,14 @@ p{
 .video-box{
     position: relative;
     margin-bottom: 35px;
-    width: 365px;
+    max-width: 360px;
     height: 250px;
 }
 .content-video{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     display: block;
 }
 .videoplay{
@@ -244,7 +267,7 @@ p{
     font-family: var(--jr);
 }
 .header__content-btn{
-    padding: 20px 120px;
+    padding: 20px 110px;
     background: var(--btnColor);
     font-size: 25px;
     color: var(--white);
@@ -279,7 +302,8 @@ p{
 .for-who-img{
     display: none;
     position: absolute;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     right: -25px;
     top: 50px;
 }
@@ -291,11 +315,15 @@ p{
 }
 .about{
     padding: 60px 0 40px 0;
+    width: 100%;
 }
 .about__title{
     font-size: var(--f35);
     line-height: 51px;
     margin-bottom: 40px;
+}
+.main{
+    width: 100%;
 }
 .about__txt{
     font-size: 20px;
@@ -339,6 +367,9 @@ p{
     left: -30px;
 }
 .bottom1{
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
     bottom: 10px;
     right: -10px;
 }
@@ -363,8 +394,11 @@ p{
     left: -20px;
 }
 .top4{
+    -webkit-transform: scale(0.7);
+        -ms-transform: scale(0.7);
+            transform: scale(0.7);
     top: -80px;
-    right: -18px;
+    right: -50px;
 }
 .sale{
     position: relative;
@@ -469,7 +503,8 @@ p{
     width: 10px !important;
     height: 10px !important;
     border: none !important;
-    box-sizing: border-box !important;
+    -webkit-box-sizing: border-box !important;
+            box-sizing: border-box !important;
     background: var(--black) !important;
 }
 .carousel-indicators{
@@ -481,7 +516,9 @@ p{
     
 }
 .tr{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 .bio__slide-txt{
     padding: 15px 20px;
@@ -514,6 +551,8 @@ p{
     font-family: var(--jr);
     color: var(--black);
     padding: 20px 100px;
+    background: -webkit-gradient(linear, left top, right top, from(#FFFFFF), to(#E4E4E4));
+    background: -o-linear-gradient(left, #FFFFFF 0%, #E4E4E4 100%);
     background: linear-gradient(90deg, #FFFFFF 0%, #E4E4E4 100%);
     border-radius: 2px;
     margin-bottom: 20px;
@@ -566,7 +605,8 @@ p{
     .logo{
         display: block;
         width: 175px;
-        object-fit: cover;
+        -o-object-fit: cover;
+           object-fit: cover;
     }
     .nav-link{
         margin: 50px 0;
@@ -578,7 +618,9 @@ p{
         display: none !important;
     }
     .navbar-collapse {
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         position: absolute !important;
         top: 100px;
         left: 0;
@@ -592,6 +634,7 @@ p{
         display: block;
     }
     .navbar-toggler:focus{
-        box-shadow: none !important;
+        -webkit-box-shadow: none !important;
+                box-shadow: none !important;
     }
 }
