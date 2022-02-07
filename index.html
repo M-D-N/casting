@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casting | Main</title>
+    <link rel="stylesheet" href="./style/all.min.css">
+    <link rel="stylesheet" href="./style/bootstrapmin.css">
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <header class="header" id="up">
+        <div class="container pad-0">
+            <nav class="header__nav navbar navbar-expand-lg">
+                <div class="container-fluid d-flex align-items-center">
+                    <img class="logo" src="./img/logo.png" alt="">
+                    <div class="dropdown">
+                        <button class="lang btn dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                          РУ
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                          <li class="dropdown-li" ><button class="dropdown-item" type="button"><a href="./indexRu.html">РУ</a></button></li>
+                          <li class="dropdown-li"><button class="dropdown-item" type="button"><a href="./indexUz.html">UZ</a></button></li>
+                        </ul>
+                      </div>
+                  <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="burger-menu fas fa-bars"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 800px;">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#who">Для кого</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">О курсе</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#!"><img src="./img/logo.png" alt=""></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#bio">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cont">Контакты</a>
+                        </li>
+                    </ul>
+                  </div>                  
+                </div>
+              </nav>
+              <div class="header__content d-flex flex-column align-items-center justify-content-center">
+                  <div class="header__content-box">
+                      <div class="header__content-item">
+                          <img src="./img/headerimg.png" alt="img" class="header-img">
+                          <img src="./img/gradient.png" alt="img" class="header-gr">
+                      </div>
+                      <div class="header__content-bottom d-flex flex-column align-items-center justify-content-between">
+                        <h2 class="header__content-bottom-desc">ВИДЕО КУРС</h2>
+                        <h1 class="header__content-title"><span>КАСТИНГ</span> БЕЗ ВЛОЖЕНИЙ</h1>
+                        <p class="header__content-txt">Как создать <span>модельное портфолио</span> и подготовится к <span>кастингу</span> самостоятельно?</p>
+                        <p style="color: #000; border-color: #000; margin: 25px 0;" class="sale__lessons d-flex align-items-center"><span class="fab fa-youtube sale-span"></span> 15 уроков</p>
+                        <div class="video-box">
+                            <video poster="./img/poster.png" class="content-video" id="Video1" >
+                                <source class="video-h" src="./video/1 урок.mp4" type="video/mp4" /> 
+                            </video>                            
+                            <div id="buttonbar">
+                                <button class="videoplay" id="play" onclick="vidplay()"><span class="fas fa-play-circle player"></span></button>
+                            </div>
+                        </div>                         
+                        <a style="margin: 0;" target="_blank" href="https://T.me/saazproduction" class="header__content-btn">Записаться</a>
+                        <div style="margin: 35px 15px;" class="sale-gift d-flex justify-content-between align-items-center">
+                            <img class="sale-gift-img" src="./img/gift.png" alt="img">
+                            <div class="sale-gift-item">
+                                <p class="sale-gift-item-txt"><span>И</span>ндивидуальное ревью</p>
+                                <p class="sale-gift-item-txt"><span>П</span>ортфолио и <span>К</span>онсультация в <span>подарок</span>!</p>
+                                <p class="sale-gift-item-time">Только до 25 февраля</p>
+                                <img class="sale-gift-item-img" src="./img/gift2.png" alt="img">
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+              </div>
+        </div>
+    </header>
+    <main class="main">
+            <div id="who" class="section for-who">
+                <div class="container">
+                    <h1 class="section__title">Для <span class="s-black">кого</span> этот курс?</h1>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Планируете стать <span>моделью</span></p>
+                        <img class="for-who-img" src="./img/emodzi1.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Не готовы <span>тратиться</span> на фотографа</p>
+                        <img class="for-who-img left" src="./img/emodzi2.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Не знаете, как проходить <span>кастинги</span></p>
+                        <img class="for-who-img" src="./img/emodzi3.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Хотите <span>подготовить себя</span> к работе с агентствами</p>
+                        <img class="for-who-img left top-e" src="./img/emodzi4.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Хотите <span>научиться</span> снимать себя на телефон </p>
+                        <img class="for-who-img" src="./img/emodzi5.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Хотите быть <span>увереннее</span> перед камерой</p>
+                        <img class="for-who-img left" src="./img/emodzi6.png" alt="">
+                    </div>
+                    <div class="for-who-item">
+                        <p class="for-who-txt">Находитесь в <span>поисках</span> себя</p>
+                        <img class="for-who-img" src="./img/emodzi7.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="section about">
+                <div class="container d-flex flex-column align-items-center">
+                    <h1 class="about__title">О <span>курсе</span></h1>
+                    <p class="about__txt">Ты давно хочешь стать <span>моделью</span>? Но у тебя нет <span>хороших фото</span> и <span>портфолио</span>?</p>
+                    <p class="about__txt">Мы поможем <span>решить</span> это проблему! Зная все проблемы и сложности первых шагов в модельной индустрии мы создали уникальный <span>модельный интенсив</span> где показываем как используя телефон и подручные средства ты сможешь создать свое <span>портфолио самостоятельно</span>!</p>
+                    <div class="video-box">
+                            <video poster="./img/poster.png" class="content-video" id="Video2" >
+                                <source class="video-h" src="./video/1 урок.mp4" type="video/mp4" /> 
+                            </video>                            
+                            <div id="buttonbar2">
+                                <button class="videoplay" id="play2" onclick="vidplay2()"><span class="fas fa-play-circle player"></span></button>
+                            </div>
+                        </div>
+                    <p class="about__txt">На курсе мы расскажем тебе о всех <span>нюансах</span> создания <span>модельного портфолио</span>, дадим <span>индивидуальный отзыв</span> на твои фотографий и данные. Вместе с <span>Саидом Фазыловым</span> и моделями <span>Алиной</span> и <span>Фаррухом</span> покажем как самостоятельно сделать снэпшот и собрать композитку. Мы постараемся <span>максимально облегчить</span> процесс подготовки к визиту в агенств и дадим полный список модельных агенств и школ в Ташкенте для продолжения <span>твоей карьеры</span>. Ты не пожалеешь! Cо всеми блоками обучения можно ознакомится ниже. 
+                    </p>
+                </div>
+            </div>
+            <div class="section blocks">
+                <div class="container d-flex flex-column align-items-center">
+                    <div class="block d-flex flex-column align-items-center justify-content-between">
+                        <h3 class="block__title"><span>Блок 1</span></h3>
+                        <p class="block__txt"><span>Модельное портфолио своими руками и как готовиться к кастингу? - Знакомство</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Что такое кастинг? </li>
+                            <li class="block__ul-li">-	Разновидности заявок  </li>
+                            <li class="block__ul-li">-	Как оценивать себя и к чему стремиться?</li>
+                            <li class="block__ul-li">-	На какие карточки и портфолио ориентироваться?</li>
+                            <li class="block__ul-li">-	Где искать вдохновение?</li>
+                            <li class="block__ul-li">-	Портфолио / Снапшоты / Селфи</li>
+                            <li class="block__ul-li">-	Ревью ваших фотографий</li>
+                        </ul>
+                        <p class="block__bottom">( 5 Уроков + бонус )</p>
+                        <img class="block__img top1" src="./img/block1.png" alt="">
+                        <img class="block__img bottom1" src="./img/block2.png" alt="">
+                    </div>
+                    <div class="block d-flex flex-column align-items-start justify-content-between">
+                        <h3 class="block__title"><span>Блок 2</span></h3>
+                        <p style="font-size: 16px;" class="block__txt"><span>Подготовка к сьемке</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Что нужно чтобы самостоятельно снять портфолио?</li>
+                            <li class="block__ul-li">-	Как снимать фото на телефон чтобы было «Вау»? </li>
+                            <li class="block__ul-li">-	Особенности света и композиции </li>
+                            <li class="block__ul-li">-	Организация съёмочного пространства и подбор фона </li>
+                        </ul>
+                        <img class="block__img top2" src="./img/block3.png" alt="">
+                        <img class="block__img bottom2" src="./img/block4.png" alt="">
+                    </div>
+                    <div class="block d-flex flex-column align-items-start justify-content-between">
+                        <h3 class="block__title"><span>Блок 3</span></h3>
+                        <p class="block__txt"><span>Практикум - Сьемка с моделями - Как самостоятельно сделать снэпшот? </span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Snaps:Позирование и сьемка на телефон</li>
+                            <li class="block__ul-li">-	Ракурсы и планы для хороших фото </li>
+                            <li class="block__ul-li">-	Видео-профиль - как снимать и готовить видео визитку </li>
+                            <li class="block__ul-li">-	Снимаем фото для портфолио (3 образа) </li>
+                            <li class="block__ul-li">-	Замена фона и настроения для разных </li>
+                        </ul>
+                        <p style="margin-top: 20px;" class="block__txt"><span>Девушки</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Особенности макиажа и прически</li>
+                            <li class="block__ul-li">-	Особенности одежды для снепшота</li>
+                            <li class="block__ul-li">-	Сьемка женского портфолио</li>
+                            <li class="block__ul-li">-	Создание женского образа и стиля</li>
+                        </ul>
+                        <p style="margin-top: 20px;" class="block__txt"><span>Парни</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Особенности одежды для снепшота</li>
+                            <li class="block__ul-li">-  Сьемка фитнесс полароидов</li>
+                            <li class="block__ul-li">-	Сьемка женского портфолио</li>
+                            <li class="block__ul-li">-	Создание мужчкого образа и стиля</li>
+                        </ul>
+                        <img class="block__img top3" src="./img/block5.png" alt="">
+                        <img class="block__img midle3" src="./img/block6.png" alt="">
+                        <img class="block__img bottom3" src="./img/block7.png" alt="">
+                    </div>
+                    <div class="block d-flex flex-column align-items-start justify-content-between">
+                        <h3 class="block__title"><span>Блок 4</span></h3>
+                        <p class="block__txt"><span>Портфолио своими руками</span></p>
+                        <ul class="block__ul">
+                            <li class="block__ul-li">-	Как отбирать фотографии </li>
+                            <li class="block__ul-li">-	Сравнение фото с телефона и с камеры </li>
+                            <li class="block__ul-li">-	Особенности света и композиции </li>
+                            <li class="block__ul-li">-	Редактирование и сборка файлов в единую карточку </li>
+                            <li class="block__ul-li">-	Редактирование видео профиля </li>
+                            <li class="block__ul-li">-	Фильтры и коррекция фотографий для портфолио </li>
+                            <li class="block__ul-li">-	Собираем композитку </li>
+                            <li class="block__ul-li">-	Финальное ревью ваших фотографий </li>
+                        </ul>
+                        <img class="block__img top4" src="./img/block8.png" alt="">
+                    </div>
+                    <div class="sale d-flex flex-column align-items-center justify-content-between">
+                        <p class="sale__lessons d-flex align-items-center"><span class="fab fa-youtube sale-span"></span> 15 уроков</p>
+                        <p class="sale__count">Скидка <span>57%</span></p>
+                        <p class="sale__count-txt"><span class="number-line">350.000</span>200.000сум</p>
+                        <div class="sale-gift d-flex justify-content-between align-items-center">
+                            <img class="sale-gift-img" src="./img/gift.png" alt="img">
+                            <div class="sale-gift-item">
+                                <p class="sale-gift-item-txt"><span>И</span>ндивидуальное ревью</p>
+                                <p class="sale-gift-item-txt"><span>П</span>ортфолио и <span>К</span>онсультация в <span>подарок</span>!</p>
+                                <p class="sale-gift-item-time">Только до 25 февраля</p>
+                                <img class="sale-gift-item-img" src="./img/gift2.png" alt="img">
+                            </div>
+                        </div>
+                        <a style="padding: 20px 80px; margin-top: 40px; margin-bottom: 0;" class="header__content-btn" target="_blank" href="https://T.me/saazproduction">Смотреть курс</a>
+                        <img class="sale-emodzi sale-top1" src="./img/emodzi8.png" alt="">
+                        <img class="sale-emodzi sale-top2" src="./img/emodzi9.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="bio" class="section bio">
+                <div class="container d-flex flex-column justify-content-center align-items-center pad-0">
+                    <h1 class="bio__title">ТРЕНЕР И <span>НАСТАВНИК</span></h1>
+                    <div class="bio__box d-flex align-items-center justify-content-center">
+                        <img class="bio__box-img" src="./img/said.png" alt="">
+                        <div class="bio__box-item">
+                            <h3 class="bio__box-item-title"><span>Саид Фазылов</span></h3>
+                            <p class="bio__box-item-txt">Креативщик, фотограф и кастинг директор с 10 летним опытом работы в индустрии моды и медиа.</p>
+                        </div>
+                    </div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2" src="./img/logo2.png" alt="img">
+                                <p class="bio__slide-txt"><a href="http://cafb.asia/ru/article/822/ "><span>Саидазим Фазылов</span> — яркий представитель нового поколения креативщиков в Узбекистане.<span>Фотограф, блоггер, основатель своей студии</span> в Ташкенте, <span>бренд менеджер узбекской марки LALI</span> и преподаватель факультета моды в Сингапурском Институте Развития Менеджмента в Ташкенте. С недавних пор он назначен на пост арт-директора крупнейшей ритейлкомпании <span>Podium Italia</span> в Узбекистане.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/afisha.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://www.afisha.uz/gorod/2019/06/20/saidazim-fazyilov/ ">Сегодня он отвечает за <span>оформление витрин</span> и <span>рекламу самых рупных мультибрендовых магазинов страны</span>, ведет и продвигает <span>узбекские бренды</span>, а год назад стал <span>первым лектором</span> международного факультета в сфере моды в <span>Узбекистане</span></a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/repost.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://repost.uz/life/saidazim "><span>креативный директор</span> Podium Italia Саидазим Фазылов о <span>фешн-индустрии</span> в нашей стране Саидазим рассказал о развитии моды в стране, недопониманиях с людьми и сложностях работы в <span>Podium Italia</span>.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/mag.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://themag.uz/post/saidazim-fazylov-o-modnoj-industrii-posle-covid-19 "><span>Саидазим Фазылов — о модной индустрии после COVID-19</span> Мода стала одной из индустрий, которая понесла сильные убытки из-за пандемии COVID-19. О потерях и том, как будет восстанавливаться fashion-мир, рассказал ташкентский креативщик, креативный директор компании Podium Italia и лектор факультета моды Сингапурского института в Ташкенте Саидазим Фазылов.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/tbld.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://tbld.uz/said-live/ ">Что происходит с мужской <span>модой в мире</span> и почему на неё влияет TikTok. Когда в Узбекистане несколько мужчин собираются вместе, это не всегда повод, чтобы поесть плов в чайхане. Подобные стереотипы разрушает узбекский <span>креативщик</span> и <span>фотограф</span> <span>Саидазим Фазылов</span>. В своём новом подкасте он собрал экспертов фэшн индустрии, чтобы обсудить мужскую неделю моды.</a></p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="d-flex flex-column align-items-center justify-content-center">
+                                <img class="logo2 tr" src="./img/bc.png" alt="img">
+                                <p class="bio__slide-txt"><a href="https://kazakhstan.britishcouncil.org/ru/creative-central-asia/%D1%83%D0%B7%D0%B1%D0%B5%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD?page=2  ">Обладатель исключительного сертификата Conde Nast College London в категории Excellence in Fashion Media (2017). В 2016 году получил степень бакалавра University of Wales. Затем в 2017 году окончил магистратуру по Бизнес Администрированию в Сингапурском Университете Развития Менеджмента в Ташкенте. С 2008 года Саидазим сотрудничал с самыми различными рекламными агенствами и компаниями Узбекистана, включая агентство Brandbox Creative, фотоагентство Panorama Media, Unicef Uzbekistan и Фонд Культуры и Искусства Узбекистана.</a></p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="carousel-indicators">
+                            <button class="bio__slide-btn active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"  aria-current="true" aria-label="Slide 1"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            <button class="bio__slide-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer id="cont" class="footer">
+        <div class="container d-flex flex-column align-items-center justify-content-between">
+            <h2 class="footer__title"><span>пробное занятие</span></h2>
+            <p class="footer__txt">Запишись бесплатно на пробное занятие прямо сейчас</p>
+            <a target="_blank" href="https://T.me/saazproduction" class="footer__btn">Записаться</a>
+            <h2 class="footer__title-2">Задайте нам <span>свой вопрос</span> и мы ответим</h2>
+            <a class="footer__btn" target="_blank" href="https://T.me/saazproduction">Задать вопрос</a>
+            <div class="footer__box d-flex">
+                <a target="_blank" href="https://youtube.com/c/SaidFazilov"><span class="footer__span fab fa-youtube"></span></a>
+                <a target="_blank" href="https://T.me/saazproduction"><span class="footer__span fab fa-telegram"></span></a>
+                <a target="_blank" href="https://instagram.com/castings.uz?utm_medium=copy_link"><span class="footer__span fab fa-instagram"></span></a>        
+            </div>
+            <img src="./img/logo.png" alt="">
+            <p class="footer__copyright">SAAZ PRODUCTION x IVCS STUDIO 2022</p>
+            <a class="up" href="#up"><span class="f-up fal fa-long-arrow-up"></span></a>
+        </div>
+    </footer>
+
+
+    <script src="./app/propper.js"></script>
+    <script type="text/javascript">
+
+        function vidplay() {
+           var video = document.getElementById("Video1");
+           var button = document.getElementById("play");
+           if (video.paused) {
+              video.play();
+              button.textContent = "";
+           } else {
+              video.pause();
+              button.textContent = "";
+           }
+        }
+        function vidplay2() {
+           var video = document.getElementById("Video2");
+           var button = document.getElementById("play2");
+           if (video.paused) {
+              video.play();
+              button.textContent = "";
+           } else {
+              video.pause();
+              button.textContent = "";
+           }
+        }
+             
+    </script>
+
+
+    
+</body>
+</html>
