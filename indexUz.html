@@ -61,7 +61,7 @@
                         <p class="header__content-txt">Qanday qilib o'z qolingiz bilan <span>modellik portfoliosini yaratish</span> va <span>kastingga</span> tayyorlanish ?</p>
                         <p style="color: #000; border-color: #000; margin: 25px 0;" class="sale__lessons d-flex align-items-center"><span class="fab fa-youtube sale-span"></span> 15 darsliklar</p>
                         <div class="video-box">
-                            <video poster="./img/poster.png" class="content-video" id="Video1" >
+                            <video poster="./img/poster.png" class="content-video" controls id="Video1" >
                                 <source class="video-h" src="./video/1 урок.mp4" type="video/mp4" /> 
                             </video>                            
                             <div id="buttonbar">
@@ -124,7 +124,7 @@
                     <p class="about__txt">Anchadan beri <span>model</span> bo'lishni orzu qilgansizmi? Lekin sizda yaxshi <span>suratlar va portfoliongiz</span> yo'qmi?</p>
                     <p class="about__txt"> Biz sizga bu muammoni <span>hal qilishda</span> yordam beramiz! Birinchi qadamlardagi barcha muammolar va qiyinchiliklari , <span>modellashtirish sanoatini</span> ko'rsatadigan noyob <span>intensiv yaratdik</span> , telefondan qanday foydalanib o'z qo'lingiz bilan <span>portfolio yasashni ko'rsatdik</span>.</p>
                     <div class="video-box">
-                            <video poster="./img/poster.png" class="content-video" id="Video2" >
+                            <video poster="./img/poster.png" class="content-video" controls id="Video2" >
                                 <source class="video-h" src="./video/1 урок.mp4" type="video/mp4" /> 
                             </video>                            
                             <div id="buttonbar2">
@@ -211,14 +211,15 @@
                     <div class="sale d-flex flex-column align-items-center justify-content-between">
                         <p class="sale__lessons d-flex align-items-center"><span class="fab fa-youtube sale-span"></span> 15 darsliklar</p>
                         <p class="sale__count">Скидка <span>57%</span></p>
-                        <p class="sale__count-txt"><span class="number-line">350.000</span>200.000so'm</p>
+                        <p><span class="number-line">350.000</span></p>
+                        <p class="sale__count-txt">200.000so'm</p>
                         <div class="sale-gift d-flex justify-content-between align-items-center">
                             <img class="sale-gift-img" src="./img/gift.png" alt="img">
                             <div class="sale-gift-item">
                                 <p class="sale-gift-item-txt"><span>K</span>ursdan oldin va keyin individual fotosuratlarni</p>
                                 <p class="sale-gift-item-txt"><span>K</span>o'rib chiqish va <span>M</span>aslahatlar sovg'a sifatida!</p>
                                 <p class="sale-gift-item-time">Faqat 20-fevralgacha</p>
-                                <img style="top: 50px;" class="sale-gift-item-img" src="./img/gift2.png" alt="img">
+                                <img style="top: 90px;" class="sale-gift-item-img" src="./img/gift2.png" alt="img">
                             </div>
                         </div>
                         <a style="padding: 20px; margin-top: 40px; margin-bottom: 0; font-size: 20px;" class="header__content-btn" target="_blank" href="https://T.me/saazproduction">KURSGA RO'YXAT OLING</a>
@@ -320,9 +321,11 @@
 
         function vidplay() {
            var video = document.getElementById("Video1");
+           var video2 = document.getElementById("Video2");
            var button = document.getElementById("play");
            if (video.paused) {
               video.play();
+              video2.pause();
               button.textContent = "";
            } else {
               video.pause();
@@ -330,13 +333,15 @@
            }
         }
         function vidplay2() {
-           var video = document.getElementById("Video2");
-           var button = document.getElementById("play2");
+            var video = document.getElementById("Video1");
+            var video2 = document.getElementById("Video2");
+            var button = document.getElementById("play2");
            if (video.paused) {
-              video.play();
+              video2.play();
+              video.pause();
               button.textContent = "";
            } else {
-              video.pause();
+              video2.pause();
               button.textContent = "";
            }
         }
