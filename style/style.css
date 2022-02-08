@@ -701,7 +701,7 @@ p {
     z-index: 99999;
     background: var(--green);
     padding: 10px 15px;
-    top: 600px;
+    bottom: 20px;
     right: 25px;
     opacity: 0.5;
 }
